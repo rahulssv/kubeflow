@@ -44,6 +44,7 @@ jobs:
       run: |
         cd components/crud-web-apps/volumes
         export IMG=rahul1181/volumes-web-app
+        apt-get install make
         make docker-build-push-multi-arch
 
     - name: Build and push latest multi-arch docker image
